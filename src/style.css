@@ -1,0 +1,59 @@
+:root{
+    --verdefuerte:#132a13;
+    --verderecuaro:#31572c;
+    --verdemedio:#4f772d;
+    --verdetenue:#90a955;
+    --amarillo:#ecf39e;
+
+}
+html {
+    font-size: 65%;
+}
+
+
+#encabezado {
+    background-color: var(--verdefuerte);
+    text-align: center;
+    padding: rem 1;
+    font-size: 7rem;
+    color:var(--amarillo) ;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.iniciando{
+    background-color:var(--verdetenue);
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    height: 300px; ;
+    border: 2px solid #132a13;
+   border-radius: 2px;
+
+}
+.iniciando label{
+    color: #132a13;
+    font-size: 2rem;
+}
+.iniciando input{
+   width: 50%;
+   border: none;
+   padding: 10px;
+}
+
+.somos p{
+    text-align: center;
+    font-size: 40px;
+    color:var(--verdefuerte) ;
+    font-family: 'Dancing Script', cursive;
+   
+  
+}
+
+
+
+
+
+
