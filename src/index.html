@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <title>Cesar</title>
    
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  </head>
-
-  <body bgcolor="#ecf39e">
-   
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    </head>
+ 
+  <body>
+  
   <header>
       <h1 id="encabezado">Colectivo Rastreadoras Del Fuerte</h1>
    </header>
-
    <img src="https://www.zonadocs.mx/wp-content/uploads/2018/12/Magis-462-rastreadoras-fuerte-4.jpg.png" >
+   <div class="escribiendo">
+   <h2>Somos un grupo de familiares que nos hemos unidos en la búsqueda de nuestros desaparecidos.</h2>
+   </div>
+ 
+    <form class="iniciando">
    
-   <form class="iniciando">
-    <fieldset>
         <section>
-          <label >Aquí puedes cifrar tus mensajes</label>
-          <p><textarea id="mensaje1" type=" text" placeholder="Ingrese su mensaje"></textarea></p>
-
+          <label >Aquí puede cifrar sus mensajes</label>
+          <p><textarea id="mensajeOne"  type=" text" placeholder="Ingrese su mensaje"></textarea></p>
+ 
         <label>Números a dezplazar</label>
-        <p><input type="number" id="numero" value="3"></p>
-
-        <p><button type="button" id="cifrar">Cifrar</button>
-          <button type="button" id="descifrar">Descifrar</button>
+        <p><input type="number" id="numero" value="1"></p>
+ 
+        <p><button type="button" class="btncifrar">Cifrar</button>
+          <button type="button" class="btndescifrar">Descifrar</button>
           </p>
        
         <label>Mensaje Resuelto</label>
-        <p><textarea name="mensajeResuelto" type="text">resultado del mensaje</textarea></p>
-        
-        <input type="reset"value=restabecer campos/>
-      </fieldset>
+        <p><textarea id="mensajeResuelto" type="text"></textarea></p>
+        <br>
+        </section>
+       
+     
       </form>
-      <div class= "somos">
-      <p>Somos un grupo de familiares que nos hemos unidos en la buqueda de nuestros desaparecidos</p>
-    </div>
-      <footer> 
-        <h5> Todos los derechos resrvados</h5>
-
-      </footer>
-      
-    </div>
+   
+     
+     
+     
     <script src="index.js" type="module"></script>
   </body>
 </html>
+ 
+
