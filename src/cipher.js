@@ -1,10 +1,13 @@
 const cipher = {
-    encode:function(textocifra,offset){
-        
-       let mensajecifrado= "";
+    encode:function(offset,textocifra){
+        if(offset<=0 && typeof textocifra !="string"){
+            throw new TypeError();
+        }
+       let mensajecifrado= ""
         for (let i=0; i< textocifra.length; i++){
-            if(textocifra.charCodeAt (i)<=90 && textocifra.charCodeAt(i)>=65){
-            let letras = (textocifra.charCodeAt(i) - 65+ (offset)) %26+65;
+            if(textocifra.charCodeAt(i) <=90 && textocifra.charCodeAt(i) >=65){
+            console.log(textocifra.charCodeAt(i))
+                let letras = (textocifra.charCodeAt(i) - 65+ (offset)) %26+65;
             console.log(letras)
             mensajecifrado += String.fromCharCode (letras);
             }
@@ -15,8 +18,11 @@ const cipher = {
       return (mensajecifrado)
       },
  
-      decode:function(textocifra2,offset){
-      let mensajedescifrado= "";
+      decode:function(offset,textocifra2){
+        if(offset<=0 && typeof textocifra2 !="string"){
+            throw new TypeError();
+        }
+             let mensajedescifrado= "";
         for (let i=0; i< textocifra2.length; i++){
             if(textocifra2.charCodeAt (i)<=90 && textocifra2.charCodeAt(i)>=65){
             let letras2 = textocifra2.charCodeAt(i) -(offset %26);
@@ -45,7 +51,7 @@ const cipher = {
  
  
  
- 
-    }
+      };
+    
 export default cipher;
  

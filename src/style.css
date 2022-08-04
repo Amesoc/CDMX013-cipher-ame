@@ -99,7 +99,7 @@ h2{
  
 }
 #numero{
-    background-color: #808f84;
+    background-color: #c5c6c5;
      padding:1em;
      border-radius: 10px;
      border: 2px solid transparent;
@@ -109,7 +109,7 @@ h2{
 }
 .btncifrar{
     border-radius: 4px;
-    background: #808f84;
+    background: #c5c6c5;
     box-shadow: o 1px 1px rgba(0, 0, 0, 0.3);
     border: none;
 }
@@ -118,7 +118,7 @@ h2{
 }
 .btndescifrar{
     border-radius: 4px;
-    background:#808f84;
+    background:#c5c6c5;
     box-shadow: o 1px 1px rgba(0, 0, 0, 0.3);
     border: none;
    

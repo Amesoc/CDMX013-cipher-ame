@@ -11,7 +11,7 @@ botoncifrado.addEventListener("click",function(){
     let texto= document.getElementById("mensajeOne").value;
     texto = texto.toUpperCase();
     let posicion=document.getElementById("numero").value;
-   let solucion= cipher.encode(texto,parseInt (posicion))
+   let solucion= cipher.encode(parseInt (posicion),texto)
    document.getElementById ("mensajeResuelto").value=solucion
  
  
@@ -21,7 +21,7 @@ botondecifrado.addEventListener("click",function(){
     let texto=document.getElementById("mensajeOne").value;
     texto=texto.toUpperCase();
     let posicion=document.getElementById("numero").value;
-    let solucion= cipher.decode(texto,parseInt (posicion))
+    let solucion= cipher.decode(parseInt (posicion),texto)
     document.getElementById ("mensajeResuelto").value=solucion
 })
  
